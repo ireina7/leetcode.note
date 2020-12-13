@@ -1,6 +1,6 @@
 class Solution {
 public:
-    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {\
+    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
 
         const int M = nums1.size();
         const int N = nums2.size();
