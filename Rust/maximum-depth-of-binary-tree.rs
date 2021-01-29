@@ -24,7 +24,8 @@ impl Solution {
             None => 0,
             Some(p) => {
                 let p = p.borrow();
-                Self::max_depth(p.left.clone()).max(Self::max_depth(p.right.clone())) + 1
+                Self::max_depth(p.left.clone())
+                    .max(Self::max_depth(p.right.clone())) + 1
             }
         }
     }
