@@ -19,6 +19,7 @@ object Solution {
                     .map(_.unwrap)
                     .toList
                     .groupBy(identity)
+                    .view
                     .mapValues(_.length)
                     .toMap
                 if (seen == counts) List(i) else List()
